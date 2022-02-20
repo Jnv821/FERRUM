@@ -2,7 +2,7 @@
 **Graphic interface for spotDL using Termux**
 
 # POWERED BY
-| <img src="https://github.com/spotDL/spotify-downloader/blob/master/docs/static/logo-transparent.png?raw=true" width="550px" height="100px">|<img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2_round.png?raw=true" width="512px" height="200px">|<img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2_round.png?raw=true" width="512px" height="200px">|<img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2_round.png?raw=true" width="512px" height="200px">|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/F-Droid_Logo_4.svg/1200px-F-Droid_Logo_4.svg.png" width="512px" height="190px">|
+| <img src="https://github.com/spotDL/spotify-downloader/blob/master/docs/static/logo-transparent.png?raw=true" width="512px" height="100px">|<img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2_round.png?raw=true" width="512px" height="200px">|<img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2_round.png?raw=true" width="512px" height="200px">|<img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2_round.png?raw=true" width="512px" height="200px">|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/F-Droid_Logo_4.svg/1200px-F-Droid_Logo_4.svg.png" width="490px" height="190px">|
 |--------|------------|------------|---------------|--------|
 | [Spotdl](https://github.com/spotDL/spotify-downloader) | [Termux:APP](https://github.com/termux/termux-app) | [Termux:API](https://github.com/termux/termux-api) | [Termux:Widget](https://github.com/termux/termux-widget)  | [F-droid](https://github.com/f-droid/fdroidclient) |
 
