@@ -1,5 +1,6 @@
 # FERRUM
 
+![Ferrum Logo Image](FERRUM/FERRUM.png)
 
 # POWERED BY
 Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid.
