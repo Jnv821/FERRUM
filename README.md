@@ -1,6 +1,6 @@
 # FERRUM
 
-![Ferrum Logo Image](icons/Ferrum.png)
+![Ferrum Logo Image](Icons/Ferrum.png)
 
 # POWERED BY
 Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid.
