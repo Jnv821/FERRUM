@@ -1,4 +1,4 @@
-# <img src="Icons/FERRUM.png" alt="Ferrum Logo Image" width="64px" height="70"> FERRUM 
+# <img src="Icons/FERRUM.png" alt="Ferrum Logo Image" width="48px" height="52"> FERRUM
 
 
 
