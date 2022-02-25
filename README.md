@@ -10,7 +10,8 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
 |--------|------------|------------|---------------|--------|
 | [Spotdl](https://github.com/spotDL/spotify-downloader) | [Termux:APP](https://github.com/termux/termux-app) | [Termux:API](https://github.com/termux/termux-api) | [Termux:Widget](https://github.com/termux/termux-widget)  | [F-droid](https://github.com/f-droid/fdroidclient) |
 
-# Set-up
+# Installation
+
   ## Pre Requisites
    - Install Fdroid
    - Install Termux, Termux:API, Termux:Widget from F-droid
@@ -40,7 +41,16 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
   ```
   - Ferrum is now installed, you can go and add a Termux Widget and select ``tasks/Ferrum.sh``
   
-  ## Enjoy!
+# Defaults
+ - Output Format: **mp3**
+ - Path template: **'{artist}/{Album}/{title} - {artist}.{ext}'**
+ - Lyrics provider: **Genius**
+ - Downloaded Songs Folder Location: **"storage/shared/Music/Ferrum/"** 
+
+ *Example command of default settings on ferrum:*
+```
+spotDL *LINK* --output-format --path-template '{artist}/{Album}/{title} - {artist}.{ext}' --lyrics-provider genius -o "storage/shared/Music/Ferrum/"
+```
   
   
   
