@@ -41,4 +41,4 @@ rm setup-pointless-repo.sh
 
 ##TODO: Download Ferrum.sh and create config
 
-git clone 
+#git clone 
