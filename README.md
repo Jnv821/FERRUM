@@ -25,7 +25,7 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
 
   - Download _Ferrum-setup.sh_ with wget
   ```sh
-  wget 
+  wget https://raw.githubusercontent.com/Jnv821/FERRUM/main/Ferrum-Setup.sh?token=GHSAT0AAAAAABRRH7L3JAOMOMSMPR2ZFOEYYQZN2GQ >> Ferrum-setup.sh
   ```
   ## Using the script
   You can use the script by specifying an interpreter or giving permissions to of execute to the ferrum-setup.sh
