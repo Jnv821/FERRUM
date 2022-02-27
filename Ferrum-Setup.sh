@@ -11,9 +11,6 @@ apt -y install ffmpeg python git
 #--##################################
 #--# Add ffmpeg & Python to path #--#
 #------------------------------------
-N
-N
-N
 
 cd ..
 cd usr/etc/
@@ -25,9 +22,8 @@ curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
 bash setup-pointless-repo.sh 
 
 #-- Install numpy
-pkg install numpy 
+pkg install -y numpy 
 
-Y
 #-- install rapidfuzz (v1.9.1 for now)
 pip install rapidfuzz==1.9.1
 
