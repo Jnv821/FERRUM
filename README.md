@@ -17,43 +17,46 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
   ## Pre Requisites
    - Install Fdroid
    - Install Termux, Termux:API, Termux:Widget from F-droid
-   - Open termux and execute (Write + Enter)
+   - Give permissions to termux; Open termux and execute (Write + Enter)
    ```
     termux-setup-storage
    ```
   ## Downloading the Ferrum setup script
 
-  - Download _Ferrum-setup.sh_ with curl
+  - Download _Ferrum-setup.sh_ with curl , execute and give permissions
   ```sh
-  curl https://raw.githubusercontent.com/Jnv821/FERRUM/main/Ferrum-Setup.sh?token=GHSAT0AAAAAABRRH7L3JAOMOMSMPR2ZFOEYYQZN2GQ > Ferrum-setup.sh
+  curl https://raw.githubusercontent.com/Jnv821/FERRUM/main/Ferrum-Setup.sh?token=GHSAT0AAAAAABRRH7L3JAOMOMSMPR2ZFOEYYQZN2GQ > Ferrum-Setup.sh ; chmod +x Ferrum-Setup.sh ; source Ferrum-Setup.sh
   ```
-  ## Using the script
-  You can use the script by specifying an interpreter or giving permissions to of execute to the ferrum-setup.sh
+  - Ferrum is now installed, you can go to your home screen and add a Termux Widget, select ``tasks/Ferrum.sh`` and you will have the ferrum graphical interface for Spotdl installed.
   
-  ### Using interpreter
-  ```
-  bash Ferrum-setup.sh
-  ```
-  ### Giving permissions
-  - Give permisions to Ferrum-setup.sh and execute it.
-  
-  ```sh
-  chmod +x ./Ferrum-setup.sh
-  source Ferrum-setup.sh
-  ```
-  - Ferrum is now installed, you can go and add a Termux Widget and select ``tasks/Ferrum.sh``
-  
-# Defaults
+# Default Options of Ferrum
  - Output Format: **mp3**
- - Path template: **'{artist}/{Album}/{title} - {artist}.{ext}'**
+ - Path template: **'{artist}/{Album}/{title} - {artist}.{ext}'** (This is how your files get named)
  - Lyrics provider: **Genius**
- - Downloaded Songs Folder Location: **"storage/shared/Music/Ferrum/"** 
+ - Output path Location: **"storage/shared/Music/Ferrum/"**  (This is where your files are stored)
 
  *Example command of default settings on ferrum:*
 ```
-spotDL *LINK* --output-format --path-template '{artist}/{Album}/{title} - {artist}.{ext}' --lyrics-provider genius -o "storage/shared/Music/Ferrum/"
+spotdl *LINK* --output-format --path-template '{artist}/{Album}/{title} - {artist}.{ext}' --lyrics-provider genius -o "storage/shared/Music/Ferrum/"
 ```
+# Changing configuration
+
+You can change the configuration in the Ferrum graphical interface or in the configuration folder, this last option not being recommended since it can break FERRUM
+
+## Advanced configuration
+  I do not reccomend changing the **Path Template** and **Output Path** options if you don't have terminal / json experience. 
   
+  ### Changing Path template:
+  to change path template is important that your path template is between **" "** , if not FERRUM will stop working correctly. You have the following options to define your path template:
   
+   - {artist}
+   - {artists}
+   - {title}
+   - {album}
+   - {ext}
+   - {playlist}
+   
+  Lets add an example with this song: 
   
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/iFBic5SN0nM?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
