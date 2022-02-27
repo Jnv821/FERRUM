@@ -58,5 +58,4 @@ You can change the configuration in the Ferrum graphical interface or in the con
    
   Lets add an example with this song: 
   
-[![YUJU - Blue Nostalgia - Link to Youtube](https://www.youtube.com/watch?v=iFBic5SN0nM)](Example)
-
+<a href="https://www.youtube.com/watch?v=iFBic5SN0nM"><img src="Icons/Example image" alt="YUJU - Blue Nostalgia"></a>
