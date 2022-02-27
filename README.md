@@ -48,7 +48,7 @@ You can change the configuration in the Ferrum graphical interface or in the con
   I do not reccomend changing the **Path Template** and **Output Path** options if you don't have terminal / json experience. 
   
   ### Changing Path template:
-  to change path template is important that your path template is between **" "** , if not FERRUM will stop working correctly. You have the following options to define your path template:
+  **to change path template is important that your path template is between " "** , if not FERRUM will stop working correctly. You have the following options to define your path template:
   
    - {artist} : Name of the artist
    - {artists} : Name of the artists
