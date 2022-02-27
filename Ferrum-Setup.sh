@@ -34,7 +34,7 @@ pip install spotdl
 
 #-- Remove setup-pointless-repo
 
-cd ~
+cd 
 rm setup-pointless-repo.sh
 
 #-- Dowmload Ferrum from repo.
