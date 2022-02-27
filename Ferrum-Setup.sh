@@ -11,6 +11,9 @@ apt -y install ffmpeg python git
 #--##################################
 #--# Add ffmpeg & Python to path #--#
 #------------------------------------
+N
+N
+N
 
 cd ..
 cd usr/etc/
@@ -22,13 +25,14 @@ curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
 bash setup-pointless-repo.sh 
 
 #-- Install numpy
-pkg install -y numpy 
+pkg install numpy 
 
+Y
 #-- install rapidfuzz (v1.9.1 for now)
-pip install -y rapidfuzz==1.9.1
+pip install rapidfuzz==1.9.1
 
 #-- Install spotdl
-pip install -y spotdl
+pip install spotdl
 
 #-- Go back to termux home directory 
 cd 
