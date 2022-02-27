@@ -63,7 +63,7 @@ You can change the configuration in the Ferrum graphical interface or in the con
 
 ### Example 1
 
-Using the default settings this is the path where the song would be downloaded is the following:
+Using the default settings the path where the song would be downloaded is the following:
 ```
 option:
 {artist}/{album}/{title} - {artist}.{ext}
