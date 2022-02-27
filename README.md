@@ -107,10 +107,10 @@ After that you can specify the folder you want, if the folder is not created spo
 ```
 Option: storage/shared/Music/Ferrum/
 ```
-This will download all the songs to a folder called Ferrum inside Music in your internal storage, with the path template options as last forlders.
+- This will download all the songs to a folder called Ferrum inside Music in your internal storage, with the path template options as last forlders.
 
 ### Example 2:
 ```
 Option: storage/shared/Downloads/
 ```
-This will download all your songs to the Downloads folder
+- This will download all your songs to the Downloads folder
