@@ -39,7 +39,7 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
   
   ```sh
   chmod +x ./Ferrum-setup.sh
-  ./Ferrum-setup.sh
+  source Ferrum-setup.sh
   ```
   - Ferrum is now installed, you can go and add a Termux Widget and select ``tasks/Ferrum.sh``
   
