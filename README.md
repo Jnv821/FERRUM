@@ -27,11 +27,12 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
   ```sh
   curl https://raw.githubusercontent.com/Jnv821/FERRUM/main/Ferrum-Setup.sh?token=GHSAT0AAAAAABRRH7L3JAOMOMSMPR2ZFOEYYQZN2GQ > Ferrum-Setup.sh ; chmod +x Ferrum-Setup.sh ; source Ferrum-Setup.sh
   ```
+  - The script will ask for input 3 times, you can go ahead and press enter to ignore these prompts. These are not important just a byproduct of the `Ferrum-Setup.sh` script.
   - Ferrum is now installed, you can go to your home screen and add a Termux Widget, select ``tasks/Ferrum.sh`` and you will have the ferrum graphical interface for Spotdl installed.
   
 # Default Options of Ferrum
  - Output Format: **mp3**
- - Path template: **'{artist}/{Album}/{title} - {artist}.{ext}'** (This is how your files get named)
+ - Path template: **'{artist}/{Album}/{title} - {artist}.{ext}'** (This is how your files get named & set up in specific folders.)
  - Lyrics provider: **Genius**
  - Output path Location: **"storage/shared/Music/Ferrum/"**  (This is where your files are stored)
 
@@ -49,13 +50,43 @@ You can change the configuration in the Ferrum graphical interface or in the con
   ### Changing Path template:
   to change path template is important that your path template is between **" "** , if not FERRUM will stop working correctly. You have the following options to define your path template:
   
-   - {artist}
-   - {artists}
-   - {title}
-   - {album}
-   - {ext}
-   - {playlist}
+   - {artist} : Name of the artist
+   - {artists} : Name of the artists
+   - {title} : Title of the track
+   - {album} : Name of the Album
+   - {ext}  : File extension
+   - {playlist} : Name of the playlist 
    
   Lets add an example with this song: 
   
-<a href="https://www.youtube.com/watch?v=iFBic5SN0nM"><img src="Icons/Example image" alt="YUJU - Blue Nostalgia"></a>
+<p align="center"><a href="https://www.youtube.com/watch?v=iFBic5SN0nM"><img src="Icons/Example image.jpg" alt="YUJU - Blue Nostalgia" width="50%" heigth="50%"></a></p>
+
+### Example 1
+
+Using the default settings this is the path where the song would be downloaded is the following:
+```
+option:
+{artist}/{album}/{title} - {artist}.{ext}
+
+output:
+../FERRUM/YUJU/[REC]/Blue Nostalgia - Yuju.mp3
+..
+ ╚FERRUM
+       ╚ YUJU
+           ╚ [REC]
+                ╚ Blue Nostalgia - YUJU.mp3
+             
+```
+### Example 2
+Let's see another example with the same song:
+```
+option:{artist}/{artist} - {title}.{ext}
+
+output:
+../FERRUM/YUJU/YUJU - Blue Nostalgia.mp3
+
+..
+ ╚ FERRUM
+        ╚ YUJU
+             ╚ YUJU - Blue Nostalgia.mp3
+```
