@@ -21,9 +21,10 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
    ```
     termux-setup-storage
    ```
-  ## Downloading the Ferrum setup script
+  ## Downloading the Ferrum setup script & execution
 
-  - Download _Ferrum-setup.sh_ with curl , execute and give permissions
+  - Copy and paste this command in your termux terminal:
+  - 
   ```sh
   curl https://raw.githubusercontent.com/Jnv821/FERRUM/main/Ferrum-Setup.sh?token=GHSAT0AAAAAABRRH7L3JAOMOMSMPR2ZFOEYYQZN2GQ > Ferrum-Setup.sh ; chmod +x Ferrum-Setup.sh ; source Ferrum-Setup.sh
   ```
@@ -90,3 +91,26 @@ output:
         ╚ YUJU
              ╚ YUJU - Blue Nostalgia.mp3
 ```
+
+### Changing path output
+
+To change the path output to a specific folder its is **required** that is **between " "** and starts with 
+
+```
+storage/shared/...
+```
+
+After that you can specify the folder you want, if the folder is not created spotDL will create it for you.  We reccomend that you leave this option unchanged since it can break FERRUM. 
+
+### Example 1: 
+- This is the default for FERRUM
+```
+Option: storage/shared/Music/Ferrum/
+```
+This will download all the songs to a folder called Ferrum inside Music in your internal storage, with the path template options as last forlders.
+
+### Example 2:
+```
+Option: storage/shared/Downloads/
+```
+This will download all your songs to the Downloads folder
