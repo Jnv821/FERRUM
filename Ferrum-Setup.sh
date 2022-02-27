@@ -21,7 +21,7 @@ cd usr/etc/
 
 #-- Setup its-pointless repo
 curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
-bash setup-pointless-repo.sh
+bash setup-pointless-repo.sh -y
 
 #-- Install numpy
 pkg install numpy
@@ -31,6 +31,9 @@ pip install rapidfuzz==1.9.1
 
 #-- Install spotdl
 pip install spotdl
+
+#-- Go back to termux home directory 
+cd 
 
 #-- Dowmload Ferrum from repo.
 
