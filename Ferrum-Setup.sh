@@ -32,11 +32,6 @@ pip install rapidfuzz==1.9.1
 #-- Install spotdl
 pip install spotdl
 
-#-- Remove setup-pointless-repo
-
-cd 
-rm setup-pointless-repo.sh
-
 #-- Dowmload Ferrum from repo.
 
 ##TODO: Download Ferrum.sh and create config
