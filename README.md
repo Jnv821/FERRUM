@@ -24,7 +24,6 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
   ## Downloading the Ferrum setup script & execution
 
   - Copy and paste this command in your termux terminal:
-  - 
   ```sh
   curl https://raw.githubusercontent.com/Jnv821/FERRUM/main/Ferrum-Setup.sh?token=GHSAT0AAAAAABRRH7L3JAOMOMSMPR2ZFOEYYQZN2GQ > Ferrum-Setup.sh ; chmod +x Ferrum-Setup.sh ; source Ferrum-Setup.sh
   ```
