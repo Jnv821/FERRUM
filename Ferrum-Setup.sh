@@ -6,7 +6,7 @@
 # Update pacakges
 apt update
 # Install ffmpeg & python
-apt -y install ffmpeg python git 
+apt -y install ffmpeg python git termux-api
 
 #--##################################
 #--# Add ffmpeg & Python to path #--#
