@@ -24,7 +24,8 @@ termux-dialog radio -t "FERRUM" -v "Downloads as SpotDL,Download from YouTube wi
         case $DL_TYPE in
             ##-- FIRST CASE, NORMAL DOWNLOAD
             ## Normal download, opens a termux dialog box. and checks if its a playlist or not.
-            0) termux-dialog -t "FERRUM DOWNLOADER"  -i "Spotify link here"  > ~/FERRUM/Config/SpotLink.json
+            0) 
+                termux-dialog -t "FERRUM DOWNLOADER"  -i "Spotify link here"  > ~/FERRUM/Config/SpotLink.json
                 if [[$SPOT_LINK == *"open.spotify.com/playlist"* ]]; 
                     then
                         ## Checks with the user if they want to download a M3U file
@@ -45,11 +46,13 @@ termux-dialog radio -t "FERRUM" -v "Downloads as SpotDL,Download from YouTube wi
                 fi;;
             
             ##-- SECOND CASE, YOUTUBE | SPOTIFY
-            1) termux-notification -t "FERRUM Downloader" -c Please introduce a YouTube Link of the video you want to download --button1 "Link" --button1-action "termux-dialog -t 'FERRUM Donwloader' -i 'Insert your YouTube link' > ~/FERRUM/Config/YtLink.json" --button2 "Cancel" --button2-action "termux-toast -b 'Purple' -c 'White' -g 'top' 'FERRUM Download was cancelled'"
+            1) 
+               termux-notification -t "FERRUM Downloader" -c Please introduce a YouTube Link of the video you want to download --button1 "Link" --button1-action "termux-dialog -t 'FERRUM Donwloader' -i 'Insert your YouTube link' > ~/FERRUM/Config/YtLink.json" --button2 "Cancel" --button2-action "termux-toast -b 'Purple' -c 'White' -g 'top' 'FERRUM Download was cancelled'"
                termux-notification -t "FERRUM Downloader" -c Please introduce a Spotify Link of to tag the video with data --button1 "Link" --button1-action "termux-dialog -t 'FERRUM Donwloader' -i 'Insert your Spotify link' > ~/FERRUM/Config/SpotLink.json" --button2 "Cancel" --button2-action "termux-toast -b 'Purple' -c 'White' -g 'top' 'FERRUM Download was cancelled'"
                spotdl "$YT_LINK|$SPOT_LINK" --path-template '"$PATH_TEMPLATE"' --lyrics-provider $LYRICS_PROVIDER --output-format $OUTPUT_FORMAT -o '"$OUTPUT_FOLDER"';;
             ##-- THIRD CASE, CHANGE OPTIONS
-            2) termux-dialog radio -t "FERRUM Options" -v "Output format,Lyrics Provider,Path Template,Output Folder" > ~/FERRUM/Config/OptionHandler.json 
+            2) 
+                termux-dialog radio -t "FERRUM Options" -v "Output format,Lyrics Provider,Path Template,Output Folder" > ~/FERRUM/Config/OptionHandler.json 
                     OPTION="$(jq -r '.index' ~/FERRUM/Config/OptionHandler.json)"
                     if OPTION="$(jq -r '.code' ~/FERRUM/Config/OptionHandler.json)" != "-1"
                         then 
