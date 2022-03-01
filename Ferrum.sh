@@ -16,6 +16,7 @@ DL__M3U="$(jq -r '.text' ~/FERRUM/Config/DownloadM3U.json)"
 termux-dialog radio -t "FERRUM" -v "Downloads as SpotDL,Download from YouTube with Spotify,Options," > ~/FERRUM/Config/DownloadType.json
 
 #-! Defines what type of Download is used
+    DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)" 
     if DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)" != -1 
         then
             return termux-notification -t "FERRUM OPERATION CANCELED" -c "FERRUM encoutered an error or the operation was cancelled by the user"
