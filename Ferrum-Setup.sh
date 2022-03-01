@@ -24,7 +24,7 @@ curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
 bash setup-pointless-repo.sh -y
 
 #-- Install numpy
-pkg -y install numpy 
+pkg install numpy 
 
 #-- install rapidfuzz (v1.9.1 for now)
 pip install rapidfuzz==1.9.1
