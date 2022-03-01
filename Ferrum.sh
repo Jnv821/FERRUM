@@ -33,7 +33,8 @@ termux-dialog radio -t "FERRUM" -v "Downloads as SpotDL,Download from YouTube wi
                             then
                                 termux-notification -t "FERRUM DOWNLOADER" -c "FERRUM will not download an M3U file for this playlist"
                                 spotdl $SPOT_LINK --path-template '"$PATH_TEMPLATE"'  --lyrics-provider $LYRICS_PROVIDER --output-format $OUTPUT_FORMAT -o '"$OUTPUT_FOLDER"'
-                            else
+                    else
+                        then
                                 termux-notification -t "FERRUM DOWNLOADER" -c "FERRUM will download an M3U file for this playlist"
                                  spotdl $SPOT_LINK --path-template '"$PATH_TEMPLATE"' --lyrics-provider $LYRICS_PROVIDER --output-format $OUTPUT_FORMAT --m3u -o '"$OUTPUT_FOLDER"'
                         fi
@@ -56,12 +57,12 @@ termux-dialog radio -t "FERRUM" -v "Downloads as SpotDL,Download from YouTube wi
                         else
                         while [OPTION="$(jq -r '.code' == "-1")"]; do
                         case $OPTION in
-                            0) termux-dialog spinner -t "FERRUM OPTIONS - Output Format" -v "mp3,m4a,flac,opus,ogg,wav" > ~/FERRUM/Config/OutputFormat.json
-                            1) termux-dialog spinner -t "FERRUM OPTIONS - Lyrics provider" -v "genius,musixmatch" > ~/FERRUM/Config/LyricsProvider.json
-                            2) termux-dialog -t "FERRUM OPTIONS - Path template" -i "{artist}/{album}/{title} - {artist}.{ext}" > ~/FERRUM/Config/PathTemplate.json
-                            3) termux-dialog -t "FERRUM OPTIONS - Ouput Folder" -i "storage/shared/FERRUM" > ~/FERRUM/Config/PathTemplate.json
+                            0) termux-dialog spinner -t "FERRUM OPTIONS - Output Format" -v "mp3,m4a,flac,opus,ogg,wav" > ~/FERRUM/Config/OutputFormat.json;;
+                            1) termux-dialog spinner -t "FERRUM OPTIONS - Lyrics provider" -v "genius,musixmatch" > ~/FERRUM/Config/LyricsProvider.json;;
+                            2) termux-dialog -t "FERRUM OPTIONS - Path template" -i "{artist}/{album}/{title} - {artist}.{ext}" > ~/FERRUM/Config/PathTemplate.json;;
+                            3) termux-dialog -t "FERRUM OPTIONS - Ouput Folder" -i "storage/shared/FERRUM" > ~/FERRUM/Config/PathTemplate.json;;
                         esac
                         done
-                    fi
+                    fi;;
         esac
     
