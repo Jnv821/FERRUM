@@ -8,6 +8,8 @@ OUTPUT_FOLDER="$(jq -r '.text' ~/FERRUM/Config/OutputFormat.json)"
 OUTPUT_FORMAT="$(jq -r '.text' ~/FERRUM/Config/OutputFormat.json)"
 PATH_TEMPLATE="$(jq -r '.text' ~/FERRUM/Config/PathTemplate.json)"
 DL__M3U="$(jq -r '.text' ~/FERRUM/Config/DownloadM3U.json)"
+DL_INDEX="$(jq -r '.index' ~/FERRUM/Config/DownloadType.json)"
+DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)"
 
 #-- MAIN FERRUM DOWNLOADER MENU --
 
@@ -16,14 +18,12 @@ DL__M3U="$(jq -r '.text' ~/FERRUM/Config/DownloadM3U.json)"
 termux-dialog radio -t "FERRUM" -v "Downloads as SpotDL,Download from YouTube with Spotify,Options," > ~/FERRUM/Config/DownloadType.json
 
 #-! Defines what type of Download is used
-DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)" 
     
-    if [ DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)" != "-1" ] 
+    if [[DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)" != "-1" ]] 
         then
-            return termux-notification -t "FERRUM OPERATION CANCELED" -c "FERRUM encoutered an error or the operation was cancelled by the user"
+          termux-notification -t "FERRUM OPERATION CANCELED" -c "FERRUM encoutered an error or the operation was cancelled by the user"
     else
-        DL_TYPE="$(jq -r '.index' ~/FERRUM/Config/DownloadType.json)"
-        case $DL_TYPE in
+        case $DL_INDEX in
             ##-- FIRST CASE, NORMAL DOWNLOAD
             ## Normal download, opens a termux dialog box. and checks if its a playlist or not.
             0) 
