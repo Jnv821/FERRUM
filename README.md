@@ -25,7 +25,7 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
 
   - Copy and paste this command in your termux terminal:
   ```sh
-  curl https://raw.githubusercontent.com/Jnv821/FERRUM/main/Ferrum-Setup.sh?token=GHSAT0AAAAAABRRH7L3JAOMOMSMPR2ZFOEYYQZN2GQ > Ferrum-Setup.sh ; chmod +x Ferrum-Setup.sh ; source Ferrum-Setup.sh
+  curl https://raw.githubusercontent.com/Jnv821/FERRUM/main/Ferrum-Setup.sh > Ferrum-Setup.sh ; chmod +x Ferrum-Setup.sh ; source Ferrum-Setup.sh
   ```
   - The script will ask for input 3 times, you can go ahead and press enter to ignore these prompts. These are not important just a byproduct of the `Ferrum-Setup.sh` script.
   - Ferrum is now installed, you can go to your home screen and add a Termux Widget, select ``tasks/Ferrum.sh`` and you will have the ferrum graphical interface for Spotdl installed.
