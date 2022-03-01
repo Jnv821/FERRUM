@@ -16,8 +16,9 @@ DL__M3U="$(jq -r '.text' ~/FERRUM/Config/DownloadM3U.json)"
 termux-dialog radio -t "FERRUM" -v "Downloads as SpotDL,Download from YouTube with Spotify,Options," > ~/FERRUM/Config/DownloadType.json
 
 #-! Defines what type of Download is used
-    DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)" 
-    if DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)" != -1 
+DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)" 
+    
+    if [ DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)" != "-1" ] 
         then
             return termux-notification -t "FERRUM OPERATION CANCELED" -c "FERRUM encoutered an error or the operation was cancelled by the user"
     else
@@ -44,8 +45,7 @@ termux-dialog radio -t "FERRUM" -v "Downloads as SpotDL,Download from YouTube wi
                 else
                     then
                         spotdl $SPOT_LINK --path-template '"$PATH_TEMPLATE"' --lyrics-provider $LYRICS_PROVIDER --output-format $OUTPUT_FORMAT -o '"$OUTPUT_FOLDER"'
-                fi;;
-            
+                fi            
             ##-- SECOND CASE, YOUTUBE | SPOTIFY
             1) 
                termux-notification -t "FERRUM Downloader" -c Please introduce a YouTube Link of the video you want to download --button1 "Link" --button1-action "termux-dialog -t 'FERRUM Donwloader' -i 'Insert your YouTube link' > ~/FERRUM/Config/YtLink.json" --button2 "Cancel" --button2-action "termux-toast -b 'Purple' -c 'White' -g 'top' 'FERRUM Download was cancelled'"
@@ -55,7 +55,7 @@ termux-dialog radio -t "FERRUM" -v "Downloads as SpotDL,Download from YouTube wi
             2) 
                 termux-dialog radio -t "FERRUM Options" -v "Output format,Lyrics Provider,Path Template,Output Folder" > ~/FERRUM/Config/OptionHandler.json 
                     OPTION="$(jq -r '.index' ~/FERRUM/Config/OptionHandler.json)"
-                    if OPTION="$(jq -r '.code' ~/FERRUM/Config/OptionHandler.json)" != -1
+                    if [ OPTION="$(jq -r '.code' ~/FERRUM/Config/OptionHandler.json)" != "-1" ]
                         then 
                             return termux-notification -t "FERRUM OPERATION CANCELED" -c "FERRUM encoutered an error or the operation was cancelled by the user"
                         else
@@ -69,4 +69,5 @@ termux-dialog radio -t "FERRUM" -v "Downloads as SpotDL,Download from YouTube wi
                         done
                     fi;;
         esac
+    fi
     
