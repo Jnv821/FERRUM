@@ -38,7 +38,7 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
 
  *Example command of default settings on ferrum:*
 ```
-spotdl *LINK* --output-format --path-template '{artist}/{Album}/{title} - {artist}.{ext}' --lyrics-provider genius -o "storage/shared/Music/Ferrum/"
+spotdl *LINK* --output-format --path-template '{artist}/{Album}/{title} - {artist}.{ext}' --lyrics-provider genius -o "storage/shared/Music/FERRUM/"
 ```
 # Changing configuration
 
