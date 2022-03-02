@@ -42,6 +42,6 @@ cd ~
 
 git clone https://github.com/Jnv821/FERRUM.git
 
-mkdir -p .shortcuts/tasks/ .shortcuts/icons/
+mkdir -p .shortcuts/tasks/ .shortcuts/icons/ ~/storage/shared/Music/FERRUM/M3U_FILES/
 cp ~/FERRUM/Icons/FERRUM.png .shortcuts/icons/Ferrum.sh.png
 mv ~/FERRUM/Ferrum.sh .shortcuts/tasks/Ferrum.sh
