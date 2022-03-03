@@ -44,8 +44,29 @@ spotdl *LINK* --output-format --path-template '{artist}/{Album}/{title} - {artis
 
 You can change the configuration in the Ferrum graphical interface or in the configuration folder, this last option not being recommended since it can break FERRUM
 
+## File formats:
+
+You can change this going to options -> file format
+
+These are the file formats availables:
+ - mp3
+ - m4a
+ - flac
+ - opus
+ - ogg
+ - wav
+
+## Lyrics Provider
+
+You can change this going to options -> Lyrics provider
+
+These are the lyrics provider currently available
+
+ - Genius
+ - Musixmatch
+
 ## Advanced configuration
-  I do not reccomend changing the **Path Template** and **Output Path** options if you don't have terminal / json experience. 
+  We do not reccomend changing the **Path Template** and **Output Path** options if you don't have terminal / json experience, since it may require you edit this type of files if something goes wrong. 
   
   ### Changing Path template:
   **to change path template is important that your path template is between " "** , if not FERRUM will stop working correctly. You have the following options to define your path template:
