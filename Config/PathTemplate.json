@@ -1,4 +1,4 @@
 {
     "code": -1,
-    "text": "{artist}/{album/{title} - {artist}.{ext}"
+    "text": "{artist}/{album}/{title} - {artist}.{ext}"
 }
