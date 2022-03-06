@@ -10,7 +10,7 @@ Ferrum is created by using Termux, Termux:API, Termux:Widget, spotDL and F-droid
  
 | <img src="https://github.com/spotDL/spotify-downloader/blob/master/docs/static/logo-transparent.png?raw=true" width="100%" height="100%">|<img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2_round.png?raw=true" width="100%" height="100%">|<img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2_round.png?raw=true" width="100%" height="100%">|<img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2_round.png?raw=true" width="100%" height="100%">|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/F-Droid_Logo_4.svg/1200px-F-Droid_Logo_4.svg.png" width="100%" height="100%">|
 |--------|------------|------------|---------------|--------|
-| [Spotdl](https://github.com/spotDL/spotify-downloader) | [Termux:APP](https://github.com/termux/termux-app) | [Termux:API](https://github.com/termux/termux-api) | [Termux:Widget](https://github.com/termux/termux-widget)  | [F-droid](https://github.com/f-droid/fdroidclient) |
+| [spotDL](https://github.com/spotDL/spotify-downloader) | [Termux:APP](https://github.com/termux/termux-app) | [Termux:API](https://github.com/termux/termux-api) | [Termux:Widget](https://github.com/termux/termux-widget)  | [F-droid](https://github.com/f-droid/fdroidclient) |
 
 # Installation
 
