@@ -38,8 +38,6 @@ cd ~
 
 #-- Dowmload Ferrum from repo.
 
-##TODO: Download Ferrum.sh and create config
-
 git clone https://github.com/Jnv821/FERRUM.git
 
 mkdir -p .shortcuts/tasks/ .shortcuts/icons/ ~/storage/shared/Music/FERRUM/M3U_FILES/
