@@ -16,8 +16,8 @@ apt -y install ffmpeg python git termux-api
 
 cd ..
 cd usr/etc/
-echo "export PATH=$PATH:~/data/data/com.termux/files/usr/bin/ffmpeg"     >> bash.bashrc
-echo "export PATH=$PATH:~/data/data/com.termux/files/usr/bin/python3.10" >> bash.bashrc
+echo "export PATH=\$PATH:~/data/data/com.termux/files/usr/bin/ffmpeg"     >> bash.bashrc
+echo "export PATH=\$PATH:~/data/data/com.termux/files/usr/bin/python3.10" >> bash.bashrc
 
 #-- Setup its-pointless repo
 curl -LO https://its-pointless.github.io/setup-pointless-repo.sh
