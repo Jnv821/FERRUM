@@ -8,7 +8,7 @@ apt update
 # Allow file system permission
 termux-setup-system
 # Install ffmpeg & python
-apt -y install ffmpeg python git termux-api
+apt -y install ffmpeg python git termux-api jq
 
 #--##################################
 #--# Add ffmpeg & Python to path #--#
