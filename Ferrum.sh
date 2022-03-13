@@ -95,6 +95,7 @@ DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)"
 			       echo " " > ~/FERRUM/Config/SpotLink.json
 			;;
 			[2]) termux-dialog radio -t "FERRUM Options" -v "File format,Lyrics provider,Path template,Output folder" > ~/FERRUM/Config/OptionHandler.json
+			     OPTION_INDEX="$(jq -r '.index' ~/FERRUM/Config/OptionHandler.json)"
 			     if [[ $OPTION_TYPE -ne "-1" ]]
 				then
 				 termux-notification --id 1 -t "FERRUM Dowloader" -c "FERRUM encountered an error or was cancelled."
