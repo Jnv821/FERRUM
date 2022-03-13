@@ -95,19 +95,18 @@ DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)"
 			       echo " " > ~/FERRUM/Config/SpotLink.json
 			;;
 			[2]) termux-dialog radio -t "FERRUM Options" -v "File format,Lyrics provider,Path template,Output folder" > ~/FERRUM/Config/OptionHandler.json
-			     OPTION_INDEX="$(jq -r '.index' ~/FERRUM/Config/OptionHandler.json)"
-			     if [[ $OPTION_TYPE -ne "-1" ]]
+			      OPTION_INDEX="$(jq -r '.index' ~/FERRUM/Config/OptionHandler.json)"
+			      if [[ $OPTION_TYPE -ne "-1" ]]
 				then
 				 termux-notification --id 1 -t "FERRUM Dowloader" -c "FERRUM encountered an error or was cancelled."
-				 rm ~/FERRUM/Config/OptionHandler.json
-				 touch ~/FERRUM/Config/OptionHandler.json
-				elif [[ "$(jq -r '.text' ~/FERRUM/Config/OptionHandler)" == "" ]]
+				 sleep 5s
+				 termux-notification-remove 1
+				elif [[ "$(jq -r '.text' ~/FERRUM/Config/OptionHandler.json)" == "" ]]
 				 then
 				 termux-notification --id 100 -t "FERRUM Downloader" -c "FERRUM needs an option to be selected before pressing ok"
 				 sleep 10s
 				 termux-notification-remove 100
 				else
-				    OPTION_INDEX="$(jq -r '.index' ~/FERRUM/Config/OptionHandler.json)"
 				    case $OPTION_INDEX in
 ## ------------------------------ File format ----------------------------------------------------
 					 [0])   cp ~/FERRUM/Config/OutputFormat.json ~/FERRUM/Config/OutputFormat.json.old
