@@ -77,10 +77,10 @@ DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)"
 			     termux-notification --id 5 -t "FERRUM Link Spotify" -c "Select Link when you have your Spotify Link prepared or cancel to exit" --button1 "Link" --button1-action "termux-dialog -t 'FERRUM Downloader' -i 'Insert your Spotify link here' > ~/FERRUM/Config/SpotLink.json" --button2 "Cancel" --button2-action "termux-toast -b 'Purple' -c 'White' -g 'top' 'FERRUM Download was cancelled' ; termux-notification-remove 5 ; exit "
 			     SPOT_LINK="$(jq -r '.text' ~/FERRUM/Config/SpotLink.json)"
 			 #-------------------------------------------------------------------------------------
-		 	   until [[ $YT_LINK == *"youtu.be/"* && $SPOT_LINK == *"open.spotify.com"* || $YT_LINK == *"youtube.com/watch?v"* && $SPOT_LINK  *"open.spotify.com"* ]]
+		 	   until [[ $YT_LINK == *"youtu.be/"* && $SPOT_LINK == *"open.spotify.com"* || $YT_LINK == *"youtube.com/watch?v"* && $SPOT_LINK == *"open.spotify.com"* ]]
 			    do
 				sleep 1s
-			      if [[ $YT_LINK == *"youtu.be/"* && $SPOT_LINK == *"open.spotify.com"* || $YT_LINK == *"youtube.com/watch?v"* && $SPOT_LINK  *"open.spotify.com"* ]]
+			      if [[ $YT_LINK == *"youtu.be/"* && $SPOT_LINK == *"open.spotify.com"* || $YT_LINK == *"youtube.com/watch?v"* && $SPOT_LINK == *"open.spotify.com"* ]]
 				 then
 				 	break
 				fi
