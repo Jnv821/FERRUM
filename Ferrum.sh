@@ -101,10 +101,10 @@ DL_TYPE="$(jq -r '.code' ~/FERRUM/Config/DownloadType.json)"
 				 rm ~/FERRUM/Config/OptionHandler.json
 				 touch ~/FERRUM/Config/OptionHandler.json
 				elif [[ "$(jq -r '.text' ~/FERRUM/Config/OptionHandler)" == "" ]]
+				 then
 				 termux-notification --id 100 -t "FERRUM Downloader" -c "FERRUM needs an option to be selected before pressing ok"
 				 sleep 10s
 				 termux-notification-remove 100
-				 fi
 				else
 				    OPTION_INDEX="$(jq -r '.index' ~/FERRUM/Config/OptionHandler.json)"
 				    case $OPTION_INDEX in
