@@ -45,3 +45,7 @@ mkdir -p .shortcuts/tasks/ .shortcuts/icons/ ~/storage/shared/Music/FERRUM/M3U_F
 cp ~/FERRUM/Icons/FERRUM.png .shortcuts/icons/Ferrum.sh.png
 mv ~/FERRUM/Ferrum.sh .shortcuts/tasks/Ferrum.sh
 chmod +x ~/.shortcuts/tasks/Ferrum.sh
+
+#-- Create alias for easy debuggin in termux terminal
+
+echo "alias ferrum='~/data/data/com.termux/files/home/.shortcuts/tasks/Ferrum.sh'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
