@@ -49,5 +49,5 @@ chmod +x ~/.shortcuts/tasks/Ferrum.sh
 #-- Create alias for easy debuggin in termux terminal
 
 echo "alias ferrum='.shortcuts/tasks/Ferrum.sh'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
-termux-toast -c "Termux will restart to apply changes"
+termux-toast -b purple -c white -g middle "Termux will restart to apply changes for Ferrum"
 exit
